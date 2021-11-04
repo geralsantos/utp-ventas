@@ -24,7 +24,6 @@ class CreateDetalleCotizacion extends Migration
             $table->string('unidad',100)->nullable();
             $table->unsignedInteger('cantidad')->default(0);
             $table->decimal('valor_unitario',16,2)->default(0);
-            $table->decimal('descuento',16,2)->default(0);
             $table->decimal('igv',16,2)->default(0);
             $table->decimal('precio_unitario',16,2)->default(0);
             $table->decimal('importe',16,2)->default(0);

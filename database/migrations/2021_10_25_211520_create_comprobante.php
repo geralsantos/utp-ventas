@@ -17,8 +17,8 @@ class CreateComprobante extends Migration
             $table->id();
             $table->bigInteger('tipo_comprobante_id')->unsigned();
             $table->foreign('tipo_comprobante_id')->references('id')->on('tipo_comprobante')->onDelete('cascade');
-            $table->bigInteger('tipo_operacion_id')->unsigned();
-            $table->foreign('tipo_operacion_id')->references('id')->on('tipo_operacion')->onDelete('cascade');
+            // $table->bigInteger('tipo_operacion_id')->unsigned();
+            // $table->foreign('tipo_operacion_id')->references('id')->on('tipo_operacion')->onDelete('cascade');
             $table->bigInteger('serie_id')->unsigned();
             $table->foreign('serie_id')->references('id')->on('tipo_comprobante_series')->onDelete('cascade');
             $table->unsignedInteger('correlativo');

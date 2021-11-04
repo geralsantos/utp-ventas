@@ -24,10 +24,7 @@ class CreateDetalleComprobante extends Migration
             $table->string('unidad',100)->nullable();
             $table->unsignedInteger('cantidad')->default(0);
             $table->decimal('valor_unitario',16,2)->default(0);
-            $table->decimal('descuento',16,2)->default(0);
             $table->decimal('igv',16,2)->default(0);
-            $table->decimal('mto_base_igv',16,2)->default(0);
-            $table->string('tipo_afect_igv',5)->default(20);
             $table->decimal('precio_unitario',16,2)->default(0);
             $table->decimal('importe',16,2)->default(0);
 

@@ -25,12 +25,8 @@ class CreateProducto extends Migration
 
             $table->unsignedInteger('cantidad')->default(0);
             $table->unsignedDecimal('valor_unitario',8,2)->default(0)->comment('Monto del valor unitario (SIN IGV).'); //Monto del valor unitario (SIN IGV).
-            $table->unsignedDecimal('descuento',8,2)->default(0);
-            $table->unsignedDecimal('mto_base_igv',8,2)->default(0);
-            $table->unsignedDecimal('porcentaje_igv',8,2)->default(0);
             $table->unsignedDecimal('igv',8,2)->default(0);
             $table->decimal('precio_unitario',8,2)->default(0)->comment('Precio de venta unitario por item. sin igv'); //Precio de venta unitario por item. sin igv
-            $table->decimal('valor_venta',8,2)->default(0)->comment('Valor de venta unitario por item. sin igv'); //
             
             $table->unsignedInteger('estado')->default(1);
             $table->unsignedInteger('usuario_creacion');
